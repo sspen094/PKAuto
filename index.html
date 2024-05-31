@@ -8,31 +8,64 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link href="./css/main.min.css" rel="stylesheet" />
-    <link href="./css/main.min.css" rel="stylesheet" />
-    <style>
-      section {
-        padding: 60px 0;
-      }
-    </style>
+    <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/logo.png"
-            alt="Logo"
-            width="100"
-            height="100"
-            class="d-inline-block align-text-center"
-          />
-          <h1>PK</h1>
-          <h1>Auto</h1>
-        </a>
+
+    <!-- Navbar -->
+    <div class="container-fluid bg-secondary">
+          <div class="row align-items-center justify-content-center">
+            <div class="col col-4 d-flex flex-row">
+              <a class="" href="#">
+                <img
+                  src="./assets/logo.png"
+                  alt="Logo"
+                  width="100"
+                  height="100"
+                  class="d-inline-block align-text-center"
+                />
+              </a>
+              <div class="flex-column">
+                <h1 class="text-primary my-0 fw-bold">PK</h1>
+                <h1 class="my-0">Auto</h1>
+              </div>
+            </div>
+            <div class="col col-4">
+              <h4 class="my-0">613-925-1234</h1>
+              <h4 class="text-primary my-0">2134 Johnston Dr</h1>
+              <h4 class="text-primary my-0">Ottawa ON</h1>
+            </div>
+            <div class="col col-1">
+              <a class="nav-link fw-bold" href="#services">Services</a>
+            </div>
+            <div class="col col-1">
+              <a class="nav-link fw-bold" href="#experts">Our Experts</a>
+            </div>
+            <div class="col col-1 ms-2 d-none d-md-inline">
+              <a class="btn btn-primary" href="#booking">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+    <!-- main image and intro text -->
+    <section id="intro">
+      <div class="bg-image" style="background-image: url('./assets/OpeningImage.png'); /* Full height */
+      height: 89%; 
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;"
+      >
+        <h1 class="text-center p-5">
+          <p class="display-2 fw-bold">Trust PK Auto</p>
+          <p class="display-5 text-primary fw-normal">For All Of Your Automotive Needs</p>
+        </h1>
+        <h1 class="text-center text-align-left fixed-bottom m-5 p-5">
+          <p >Open Tuesday - Friday:<span class="fw-bold text-primary"> 8AM - 5PM</span></p>
+          <p>Open Saturday: <span class="fw-bold text-primary">10AM - 2PM</span></p>
+        </h1>
       </div>
-    </nav>
-    <h1>Sam Test</h1>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
