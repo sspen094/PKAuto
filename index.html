@@ -64,14 +64,29 @@
       background-size: cover;"
       >
       <div class="">
-        <h1 class="text-center p-5">
+        <h1 class="text-center p-5 m-0">
           <p class="display-2 fw-bold">Trust PK Auto</p>
           <p class="display-5 text-primary fw-normal">For All Of Your Automotive Needs</p>
         </h1>
-        <h1 class="text-center text-align-left m-5 p-5">
+        
+        <h1 class="text-center m-0 p-5">
           <p >Open Tuesday - Friday:<span class="fw-bold text-primary"> 8AM - 5PM</span></p>
           <p>Open Saturday: <span class="fw-bold text-primary">10AM - 2PM</span></p>
         </h1>
+        <div class="row justify-content-around m-0">
+          <div class="col col-3">
+            <p class="fw-bolder fst-italic fs-5">"I've been bringing my car to PK Auto for over five years, and I couldn't be happier with their service. The team is knowledgeable, friendly, and always willing to go the extra mile to ensure my car is running smoothly. Whether it's a routine oil change or a more complex repair, I trust them completely to get the job done right. Highly recommend!"</p>
+            <h5 class="fw-bolder text-primary">- Jane D.</h4>
+          </div>
+          <div class="col col-3">
+            <p class="fw-bolder fst-italic fs-5">"I recently moved to the area and was nervous about finding a reliable mechanic. After a few visits to PK Auto, I can confidently say I've found the best place in town. Their transparency and honesty are refreshing. They explain everything in detail and provide options without any pressure. Plus, their prices are very reasonable. A+ service!"</p>
+            <h5 class="fw-bolder text-primary">- Micheal S.</h4>
+          </div>
+          <div class="col col-3">
+            <p class="fw-bolder fst-italic fs-5">"PK Auto saved my road trip! I was passing through town when my car started making a strange noise. I called them in a panic, and they fit me in right away. Within an hour, they had diagnosed and fixed the issue, and I was back on the road. Their professionalism and efficiency were top-notch. If I lived locally, this would definitely be my go-to shop!"</p>
+            <h5 class="fw-bolder text-primary">- Emily R.</h4>
+          </div>
+        </div>
       </div>
         
       </div>
@@ -98,6 +113,8 @@
                   <p class="card-text my-1">• Tire Rotation</p>
                 </div>
                 <div class="text-center">
+                  <h4 class="fw-bold my-0">$50</h4>
+                  <p class="text-muted my-0">&#160;</p>
                   <a href="#" class="btn btn-primary mb-2 " data-bs-toggle="modal" data-bs-target="#tire-change-modal">More Info</a>
                 </div>
               </div>
@@ -115,6 +132,8 @@
 
                 </div>
                 <div class="text-center">
+                  <h4 class="fw-bold my-0">$150</h4>
+                  <p class="text-muted my-0">&#160;</p>
                   <a href="#" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#oil-change-modal">More Info</a>
                 </div>
               </div>
@@ -132,6 +151,8 @@
 
                 </div>
                 <div class="text-center">
+                  <h4 class="fw-bold my-0">Free Quote</h4>
+                  <p class="text-muted my-0">Pricing may vary</p>
                   <a href="#" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#repair-modal">More Info</a>
                 </div>
               </div>
@@ -382,6 +403,7 @@
         var dest = value + "Confirmation";
         var inputEmail = document.getElementById(source).value;
         document.getElementById(dest).innerHTML = inputEmail;
+        document.getElementById(source).value = ""
       }
     </script>
 
