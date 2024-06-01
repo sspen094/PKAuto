@@ -9,13 +9,21 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <link href="./css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> 
+    <title>Bootstrap Datepicker</title> 
+    <style> 
+      label{margin-left: 20px;} 
+      #datepicker{width:180px;} 
+      #datepicker > span:hover{cursor: pointer;} 
+    </style>
   </head>
   <body>
 
     <!-- Navbar -->
-    <div class="container-fluid fixed-top bg-secondary">
+    <div class="container-fluid fixed-top bg-secondary border-bottom border-light border-3">
           <div class="row align-items-center justify-content-center">
-            <div class="col col-4 d-flex flex-row">
+            <div class="col col-2 d-flex flex-row justify-content-center">
               <a class="" href="#">
                 <img
                   src="./assets/logo.png"
@@ -26,32 +34,31 @@
                 />
               </a>
               <div class="flex-column">
-                <h1 class="text-primary my-0 fw-bold">PK</h1>
-                <h1 class="my-0">Auto</h1>
+                <h1 class="text-primary my-0 py-0 fw-bold">PK</h1>
+                <h1 class="my-0 py-0">Auto</h1>
               </div>
             </div>
-            <div class="col col-4">
+            <div class="col col-4 justify-content-center">
               <h4 class="my-0">613-925-1234</h1>
               <h4 class="text-primary my-0">2134 Johnston Dr</h1>
               <h4 class="text-primary my-0">Ottawa ON</h1>
             </div>
-            <div class="col col-1">
+            <div class="col col-1 justify-content-center">
               <a class="nav-link fw-bold" href="#services">Services</a>
             </div>
-            <div class="col col-1">
+            <div class="col col-1 justify-content-center">
               <a class="nav-link fw-bold" href="#experts">Our Experts</a>
             </div>
-            <div class="col col-1 ms-2 d-none d-md-inline">
-              <a class="btn btn-primary" href="#booking">Book Now</a>
+            <div class="col col-1  justify-content-center d-none d-md-inline">
+              <a class="btn btn-primary" href="#book">Book Now</a>
             </div>
           </div>
         </div>
 
     <!-- main image and intro text -->
     <section id="intro">
-      <div class="bg-image d-flex align-items-center justify-content-center" style="background-image: url('./assets/OpeningImage.png'); /* Full height */
+      <div class="bg-image d-flex align-items-center justify-content-center" style="background-image: url('./assets/OpeningImage.png'); 
       height: 100%; 
-      /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;"
@@ -69,11 +76,314 @@
         
       </div>
     </section>
-    <div>
-      <h1>
 
-      </h1>
+    <!-- Services -->
+
+    <section id="" class="bg-secondary">
+      <a class="anchor" name="services"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="fw-bold m-3">Pricing and Services</h1>
+          </div>
+        </div>
+          <div class="row py-5 justify-content-around">
+            <div class="col col-12 col-lg-4  my-4 d-flex justify-content-center">
+              <div class="card w-75" style="width: 18rem;">
+                <div class="card-body mx-5">
+                  <h5 class="card-title fw-bold">Tire Changes</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Summer/Winter Tire Changes</h6>
+                  <p class="card-text fw-bold mt-4">Includes</p>
+                  <p class="card-text my-1">• Tire Change</p>
+                  <p class="card-text my-1">• Tire Rotation</p>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary mb-2 " data-bs-toggle="modal" data-bs-target="#tire-change-modal">More Info</a>
+                </div>
+              </div>
+            </div><div class="col col-12 col-lg-4 my-4 d-flex justify-content-center">
+              <div class="card w-75" style="width: 18rem;">
+                <div class="card-body mx-5">
+                  <h5 class="card-title fw-bold">Full Service Oil Change</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Oil Change and Tune Up</h6>
+                  <p class="card-text fw-bold mt-4">Includes</p>
+                  <p class="card-text my-1">• Oil Change</p>
+                  <p class="card-text my-1">• Air Filter Check</p>
+                  <p class="card-text my-1">• Topping Fluid Levels</p>
+                  <p class="card-text my-1">• Battery Test</p>
+                  <p class="card-text my-1">• Tire Pressure Test</p>
+
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#oil-change-modal">More Info</a>
+                </div>
+              </div>
+            </div><div class="col col-12 col-lg-4 my-4 d-flex justify-content-center">
+              <div class="card w-75 " style="width: 18rem;">
+                <div class="card-body mx-5">
+                  <h5 class="card-title fw-bold">Repair</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Check for Any Repairs on your Vehicle</h6>
+                  <p class="card-text fw-bold mt-4">We Check For</p>
+                  <p class="card-text my-1">• Engine</p>
+                  <p class="card-text my-1">• Brakes</p>
+                  <p class="card-text my-1">• Electronics</p>
+                  <p class="card-text my-1">• Body</p>
+                  <p class="card-text my-1">• And More...</p>
+
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#repair-modal">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tire Change Modal -->
+
+    <div class="modal fade modal-lg" id="tire-change-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Tire Changes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Switching between summer and winter tires is crucial for your vehicle's performance and safety. Our comprehensive tire change service ensures that your car is ready for the road, no matter the season.</p>
+            <h6 class="fw-bold text-primary">Our Service Includes:</h4>
+            <p><span class="fw-bold">Tire Change:</span> Our skilled technicians will carefully remove your current tires and replace them with your preferred set of seasonal tires. We ensure that each tire is securely fitted and balanced to provide a smooth and safe ride.</p>
+            <p><span class="fw-bold">Tire Rotation:</span> Regular tire rotation is vital for extending the lifespan of your tires and promoting even wear. Our team will rotate your tires according to the manufacturer's recommendations, helping you get the most out of your investment.</p>
+            <p>Trust us for all your tire change needs and experience a smoother, safer drive in any weather condition.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Oil Change Modal -->
+
+    <div class="modal fade modal-lg" id="oil-change-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Full Service Oil Change</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Ensure your vehicle runs smoothly with our comprehensive Full Service Oil Change. Our expert technicians provide a thorough oil change and tune-up.</p>
+            <h6 class="fw-bold text-primary">Our Service Includes:</h4>
+            <p><span class="fw-bold">Oil Change:</span> Our skilled mechanics will drain the old oil from your engine and replace it with high-quality, fresh oil to keep your engine running efficiently and extend its lifespan.</p>
+            <p><span class="fw-bold">Air Filter Check:</span> We inspect your vehicle's air filter to ensure it is clean and free from debris. A clean air filter helps maintain optimal engine performance and fuel efficiency.</p>
+            <p><span class="fw-bold">Topping Fluid Levels:</span> All essential fluids, including coolant, brake fluid, power steering fluid, and windshield washer fluid, will be checked and topped off as needed to ensure your vehicle operates at its best.</p>
+            <p><span class="fw-bold">Battery Test:</span> Our technicians will perform a comprehensive battery test to check its charge and overall health. This helps prevent unexpected breakdowns and ensures your vehicle starts reliably.</p>
+            <p><span class="fw-bold">Tire Pressure Test:</span> Properly inflated tires are crucial for safe driving and fuel efficiency. We will check the pressure in all four tires and adjust it to the manufacturer's recommended levels for optimal performance and safety</p>
+              <p>Trust our experienced team to deliver top-notch service and keep your vehicle in peak condition. Schedule your Full Service Oil Change today and drive with confidence!</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair Modal -->
+
+    <div class="modal fade modal-lg" id="repair-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Comprehensive Vehicle Repair Services</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>At our auto repair shop, we conduct thorough checks to ensure your vehicle is in optimal condition. Our expert mechanics will meticulously inspect and repair any issues, providing you with a safe and reliable driving experience. Our services include:</p>
+            <h6 class="fw-bold text-primary">We Can Help You With:</h4>
+            <p><span class="fw-bold">Engine Inspection and Repair:</span> From faulty spark plugs to full engine rebuilds, we ensure your engine runs smoothly and efficiently.</p>
+            <p><span class="fw-bold">Brake System Check:</span> We examine and repair your brakes, including pads, rotors, and fluid levels, to ensure maximum stopping power.</p>
+            <p><span class="fw-bold">Electronics and Electrical Systems:</span> Our team diagnoses and repairs electrical issues, including battery, alternator, and wiring problems.</p>
+            <p><span class="fw-bold">Bodywork and Cosmetic Repairs:</span> We handle everything from minor dents and scratches to major collision repairs, restoring your vehicle's appearance.</p>
+            <p><span class="fw-bold">Additional Services:</span> We also offer tire rotations, alignments, exhaust system checks, and more to keep your vehicle performing at its best.</p>
+            <p>Trust us to keep your vehicle in top condition with our comprehensive repair services.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experts -->
+
+    <section id="" class="bg-light">
+      <a class="anchor" name="experts"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="fw-bold m-3">Meet Our Service Experts</h1>
+          </div>
+        </div>
+        <div class="row py-5 justify-content-around">
+          <div class="col  col-12 col-lg-4  my-4 d-flex justify-content-center">
+            <div class="card w-75" style="width: 18rem;">
+              <img src="./assets/TimWilson.jpeg" class="card-img-top" alt="Tim Wilson">
+              <div class="card-body mx-5">
+                <h5 class="card-title fw-bold">Tim Wilson</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">5 Years Experience</h6>
+                <p class="card-text fw-bold mt-2 text-primary">Tire Change and Oil Change Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col  col-12 col-lg-4  my-4 d-flex justify-content-center">
+            <div class="card w-75" style="width: 18rem;">
+              <img src="./assets/JohnMartin.jpeg" class="card-img-top" alt="Tim Wilson">
+              <div class="card-body mx-5">
+                <h5 class="card-title fw-bold">John Martin</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">14 Years Experience</h6>
+                <p class="card-text fw-bold mt-2 text-primary">Engine and Electronics Expert</p>
+              </div>
+            </div>
+          </div>
+          <div class="col  col-12 col-lg-4  my-4 d-flex justify-content-center">
+            <div class="card w-75" style="width: 18rem;">
+              <img src="./assets/TomHill.jpeg" class="card-img-top" alt="Tim Wilson">
+              <div class="card-body mx-5">
+                <h5 class="card-title fw-bold">Tom Hill</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">26 Years Experience</h6>
+                <p class="card-text fw-bold mt-2 text-primary">Body Repair and Brake Repair</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+
+    <section class="bg-secondary">
+      <a class="anchor" name="book"></a>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h1 class="fw-bold m-5">Book an Appointment Today!</h1>
+          </div>
+        </div>
+        <div class="row p-3 justify-content-center">
+          <div class="col col-5">
+            <form class="my-3">
+              <div class="mb-3">
+                <label for="EmailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="NameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="NameInput" placeholder="John Doe">
+              </div>
+              <div class="mb-3">
+                <label for="TypeInput" class="form-label">Repair Type</label>
+                <select class="form-select" aria-label="Select Job Type" id="TypeInput">
+                  <option value="Tire Change">Tire Change</option>
+                  <option value="Oil Change">Oil Change</option>
+                  <option value="Repair">Repair</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="ExpertInput" class="form-label">Expert</label>
+                <select class="form-select" aria-label="Select Service Expert" id="ExpertInput">
+                  <option value="Tim Wilson">Tim Wilson</option>
+                  <option value="John Martin">John Martin</option>
+                  <option value="Tom Hill">Tom Hill</option>
+                </select>
+              </div>
+              <label for="datepicker" class="form-label">Select Date</label> 
+                <div id="datepicker" 
+                     class="input-group date w-100 mb-3" 
+                     data-date-format="mm-dd-yyyy">  
+                    <input class="form-control" 
+                           type="text" readonly id="DateInput"/> 
+                      <div class="input-group-text p-0">
+                        <span class="input-group-addon m-1"> 
+                          <i class="bi bi-calendar3"></i>
+                        </span>
+                      </div>    
+                    </input>              
+                </div> 
+                <div class="mb-5">
+                  <label for="TimeInput" class="form-label">Select Time</label>
+                  <select class="form-select" aria-label="Select Service Expert" id="TimeInput">
+                    <option value="8 AM">8 AM</option>
+                    <option value="9 AM">9 AM</option>
+                    <option value="10 AM">10 AM</option>
+                    <option value="11 AM">11 AM</option>
+                    <option value="12 AM">12 AM</option>
+                    <option value="1 PM">1 PM</option>
+                    <option value="2 PM">2 PM</option>
+                    <option value="3 PM">3 PM</option>
+                    <option value="4 PM">4 PM</option>
+                    <option value="5 PM">5 PM</option>
+                  </select>
+                </div>
+                <div class="text-center my-5">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmation-modal" onclick="book()">Submit</button>
+                </div>
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Confirmation Modal -->
+
+    <div class="modal fade" id="confirmation-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Booking Confirmation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="fw-bold text-primary">Email:</h4>
+            <p value="" id="EmailConfirmation"></p>
+            <h4 class="fw-bold text-primary">Name:</h4>
+            <p value="" id="NameConfirmation"></p>
+            <h4 class="fw-bold text-primary">Service:</h4>
+            <p value="" id="TypeConfirmation"></p>
+            <h4 class="fw-bold text-primary">Expert:</h4>
+            <p value="" id="ExpertConfirmation"></p>
+            <h4 class="fw-bold text-primary">Date:</h4>
+            <p value="" id="DateConfirmation"></p>
+            <h4 class="fw-bold text-primary">Time:</h4>
+            <p value="" id="TimeConfirmation"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Take Values and add them to confirmation modal -->
+    <script>
+      function book(){
+        var inputs = ["Email", "Name", "Type", "Expert", "Date", "Time"]
+        inputs.forEach(setValues);
+      }
+      function setValues(value, index, array){
+        var source = value + "Input";
+        var dest = value + "Confirmation";
+        var inputEmail = document.getElementById(source).value;
+        document.getElementById(dest).innerHTML = inputEmail;
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -86,5 +396,29 @@
         new bootstrap.Tooltip(t);
       });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity= 
+"sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous"> 
+</script> 
+<script> 
+    $(function () { 
+        $("#datepicker").datepicker({  
+            autoclose: true,  
+            todayHighlight: true, 
+            daysOfWeekDisabled: [0,1],
+            orientation: "bottom right",
+        }).datepicker('update', new Date()); 
+    }); 
+</script> 
+<script src= 
+"https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+    integrity= 
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"> 
+</script> 
+<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"> 
+</script> 
   </body>
 </html>

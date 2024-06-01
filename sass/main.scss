@@ -1,5 +1,9 @@
 $primary: #6b0000;
 $secondary: #f3e6cf;
-$light: rgb(255, 241, 222);
+$light: #e0cdab;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+.anchor{
+    scroll-margin-top: 100px;
+}
